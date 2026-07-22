@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ShopEase</h1>
+        <div class="cart">
+        🛒 Cart
+        <span id="count">0</span>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Big Summer Sale</h1>
+            <p>Up to <span>50% OFF</span> on Electronics & Fashion</p>
+            <button onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+        Shop Now
+    </button>
+        </div>
+    </section>
+    <section class="stats">
+        <div class="stat-box">
+            <h2>1000+</h2>
+            <p>Products</p>
+        </div>
+        <div class="stat-box">
+            <h2>5000+</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Support</p>
+        </div>
+        <div class="stat-box">
+            <h2>100%</h2>
+            <p>Secure Payment</p>
+        </div>
+    </section>
+    <section class="controls">
+        <input
+        type="text"
+        id="search"
+        placeholder="Search Products...">
+        <section class="categories">
+            <div class="cat">💻 Electronics</div>
+            <div class="cat">👟 Fashion</div>
+            <div class="cat">⌚ Watches</div>
+            <div class="cat">📱 Mobiles</div>
+        </section>
+    <section class="controls">
+        <input type="text" id="search" placeholder="Search Products...">
+        <select id="category">
+            <option value="all">All Categories</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Fashion">Fashion</option>
+        </select>
+    </section>
+    <select id="sort">
+        <option value="">Sort By</option>
+        <option value="low">Price Low to High</option>
+        <option value="high">Price High to Low</option>
+        </select>
+    </section>
+    <section class="title">
+        <h2>🔥 Featured Products</h2>
+        <p>Discover our best-selling products at amazing prices.</p>
+    </section>
+    <section id="products" class="products">
+    </section>
+    <button id="checkoutBtn">
+    Proceed to Checkout
+    </button>
+    <div id="popup" class="popup">
+    <div class="popup-content">
+    <h2>Checkout</h2>
+    <input type="text" placeholder="Full Name">
+    <input type="text" placeholder="Address">
+    <button onclick="placeOrder()">
+    Place Order
+    </button>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+    <h2>ShopEase</h2>
+    <p>Your One Stop Shopping Destination</p>
+    <p>📧 support@shopease.com</p>
+    <p>© 2026 ShopEase. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
